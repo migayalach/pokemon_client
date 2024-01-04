@@ -1,4 +1,5 @@
 // COMPONET'S
+import Form from "../../components/Form/Form";
 
 // HOOK'S
 import React from "react";
@@ -15,6 +16,7 @@ function Login() {
   return (
     <div>
       <h1>Login</h1>
+      <Form />
     </div>
   );
 }
