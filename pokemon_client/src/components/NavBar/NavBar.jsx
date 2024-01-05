@@ -2,6 +2,8 @@
 
 // HOOK'S
 import React from "react";
+import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 
 // LIBRARY
 
@@ -14,7 +16,17 @@ import React from "react";
 function NavBar() {
   return (
     <div>
-      <h1>NavBar</h1>
+      <ul>
+        <li>
+          <NavLink to="/home">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+      </ul>
+      <div>
+        <p>Pokedex</p>
+      </div>
     </div>
   );
 }
