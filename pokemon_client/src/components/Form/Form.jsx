@@ -12,7 +12,7 @@ import loginValidate from "../../validations/loginValidate";
 
 // STYLESHEET'S
 
-function Form() {
+function Form({ dataDispatch }) {
   const [passwordView, setPasswordView] = useState(false);
   const [errors, setErrors] = useState({});
   const [inputData, setInputData] = useState({
@@ -35,7 +35,7 @@ function Form() {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    alert("golis");
+    dataDispatch(inputData);
   };
 
   useEffect(() => {}, []);
